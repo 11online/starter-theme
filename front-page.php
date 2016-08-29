@@ -18,16 +18,16 @@ add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_c
 add_action('genesis_after_header', 'add_home_page_widgets');
 function add_home_page_widgets() {
   genesis_widget_area( 'home-widget-1', array(
-		'before' => '<div class="home-widget-1 widget-area">',
-		'after'  => '</div>',
+		'before' => '<div class="home-widget-1 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
   ) );
   genesis_widget_area( 'home-widget-2', array(
-		'before' => '<div class="home-widget-2 widget-area">',
-		'after'  => '</div>',
+		'before' => '<div class="home-widget-2 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
   ) );
   genesis_widget_area( 'home-widget-3', array(
-		'before' => '<div class="home-widget-3 widget-area">',
-		'after'  => '</div>',
+		'before' => '<div class="home-widget-3 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
   ) );
 }
 

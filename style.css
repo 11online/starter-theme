@@ -109,7 +109,7 @@ h1 {
 
 mark {
   background: #ff0;
-  color: #333; }
+  color: #000; }
 
 small {
   font-size: 80%; }
@@ -252,7 +252,7 @@ html {
 /* Chrome fix */
 body {
   background-color: #f5f5f5;
-  color: #333;
+  color: #000;
   font-family: Lato, sans-serif;
   font-size: 18px;
   font-size: 1.8rem;
@@ -287,7 +287,7 @@ a {
   color: #c3251d;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #333;
+    color: #000;
     text-decoration: none; }
 
 p {
@@ -329,7 +329,7 @@ blockquote {
 /* ## Headings
  *--------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
+  color: #000;
   font-family: Lato, sans-serif;
   font-weight: 400;
   line-height: 1.2;
@@ -418,7 +418,7 @@ img {
 input, select, textarea {
   background-color: #fff;
   border: 1px solid #ddd;
-  color: #333;
+  color: #000;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: 300;
@@ -433,12 +433,12 @@ input[type="checkbox"], input[type="image"], input[type="radio"] {
   width: auto; }
 
 ::-moz-placeholder {
-  color: #333;
+  color: #000;
   font-weight: 300;
   opacity: 1; }
 
 ::-webkit-input-placeholder {
-  color: #333;
+  color: #000;
   font-weight: 300; }
 
 button {
@@ -511,19 +511,19 @@ input:focus[type="button"], input:focus[type="reset"], input:focus[type="submit"
   color: #fff; }
 .footer-widgets button:hover {
   background-color: #fff;
-  color: #333; }
+  color: #000; }
 .footer-widgets input:hover[type="button"], .footer-widgets input:hover[type="reset"], .footer-widgets input:hover[type="submit"] {
   background-color: #fff;
-  color: #333; }
+  color: #000; }
 .footer-widgets .button:hover, .footer-widgets button:focus {
   background-color: #fff;
-  color: #333; }
+  color: #000; }
 .footer-widgets input:focus[type="button"], .footer-widgets input:focus[type="reset"], .footer-widgets input:focus[type="submit"] {
   background-color: #fff;
-  color: #333; }
+  color: #000; }
 .footer-widgets .button:focus {
   background-color: #fff;
-  color: #333; }
+  color: #000; }
 
 .button {
   display: inline-block; }
@@ -586,7 +586,7 @@ th {
   font-size: 1em;
   font-weight: bold;
   padding: 15px 23px 14px;
-  color: #333;
+  color: #000;
   background: #fff;
   z-index: 100000;
   /* Above WP toolbar. */
@@ -749,10 +749,10 @@ th {
   font-size: 36px;
   font-size: 3.6rem; }
   .entry-title a {
-    color: #333; }
+    color: #000; }
 
 .sidebar .widget-title a {
-  color: #333; }
+  color: #000; }
 
 .entry-title a:hover, .entry-title a:focus {
   color: #c3251d; }
@@ -868,7 +868,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
     width: 100%; }
   .enews-widget input:hover[type="submit"], .enews-widget input:focus[type="submit"] {
     background-color: #fff;
-    color: #333; }
+    color: #000; }
 
 .enews form + p {
   margin-top: 24px; }
@@ -889,7 +889,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
 
 /* Display outline on focus */
 :focus {
-  color: #333;
+  color: #000;
   outline: #ccc solid 1px; }
 
 /* # Site Header
@@ -916,9 +916,9 @@ a.alignright, img.alignright, .wp-caption.alignright {
   font-weight: 400;
   line-height: 1.2; }
   .site-title a {
-    color: #333; }
+    color: #000; }
     .site-title a:hover, .site-title a:focus {
-      color: #333; }
+      color: #000; }
 
 .header-image .site-title > a {
   background: url(images/logo.png) no-repeat left;
@@ -959,7 +959,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
     display: inline-block;
     text-align: left; }
   .genesis-nav-menu a {
-    color: #333;
+    color: #000;
     text-decoration: none;
     display: block;
     padding: 30px 24px; }
@@ -1048,7 +1048,7 @@ a.alignright, img.alignright, .wp-caption.alignright {
     color: #fff;
     text-decoration: underline; }
   .nav-primary .genesis-nav-menu .sub-menu a {
-    color: #333; }
+    color: #000; }
     .nav-primary .genesis-nav-menu .sub-menu a:hover, .nav-primary .genesis-nav-menu .sub-menu a:focus {
       color: #c3251d;
       text-decoration: underline; }
