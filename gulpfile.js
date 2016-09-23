@@ -5,8 +5,14 @@ var sourcemaps = require('gulp-sourcemaps');
 
 
 gulp.task('serve', ['sass'], function() {
-    browserSync.init({
-        proxy: "scotch.dev"
+    browserSync.init(null, {
+        proxy: "scotch.dev",
+        ghostMode: {
+          clicks: true,
+          location: true,
+          forms: true,
+          scroll: true
+        }
     });
 
     gulp.watch("style.sass", ['sass']);
