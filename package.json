@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-ruby-sass": "^2.1.0"
+  }
+}
