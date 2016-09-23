@@ -17,13 +17,11 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', () =>
     sass('style.sass', {sourcemap: true})
         .on('error', sass.logError)
-        // for inline sourcemaps
-        .pipe(sourcemaps.write())
         // for file sourcemaps
-        .pipe(sourcemaps.write('', {
-            includeContent: false,
-            sourceRoot: 'source'
-        }))
+        .pipe(sourcemaps.write('maps'), {
+          includeContent: false,
+          sourceRoot: 'source'
+        })
         .pipe(gulp.dest(''))
 );
 
