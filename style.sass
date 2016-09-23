@@ -74,6 +74,33 @@ $buttonColor : #c3251d
 $bodyFont : Lato, sans-serif
 $headingFont : Lato, sans-serif
 
+/* Mixins
+@mixin linearGradient($top, $bottom)
+  background: $top
+  background: -moz-linear-gradient(top,  $top 0%, $bottom 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom))
+  background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%)
+  background: -o-linear-gradient(top,  $top 0%,$bottom 100%)
+  background: -ms-linear-gradient(top,  $top 0%,$bottom 100%)
+  background: linear-gradient(to bottom,  $top 0%,$bottom 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 )
+@mixin radialGradient($from, $mid, $to)
+  background: -moz-radial-gradient(center, circle cover, $from 0%, $mid 40%, $to 100%)
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(40%, $mid), color-stop(100%, $to))
+  background: -webkit-radial-gradient(center, circle cover, $from 0%, $mid 40%, $to 100%)
+  background: -o-radial-gradient(center, circle cover, $from 0%, $mid 40%, $to 100%)
+  background: -ms-radial-gradient(center, circle cover, $from 0%, $mid 40%, $to 100%)
+  background: radial-gradient(center, circle cover, $from 0%, $mid 40%, $to 100%)
+  background-color: $to
+@mixin borderRadius($amount)
+  -moz-border-radius: $amount
+  -webkit-border-radius: $amount
+  border-radius: $amount
+@mixin boxShadow($topLeft, $topRight, $bottomRight, $bottomLeft, $color)
+  -webkit-box-shadow: $topLeft $topRight $bottomRight $bottomLeft $color
+  -moz-box-shadow: $topLeft $topRight $bottomRight $bottomLeft $color
+  box-shadow: $topLeft $topRight $bottomRight $bottomLeft $color
+
 /* # HTML5 Reset
  *----------------------------------------------------------------------------------------------------
 
