@@ -1,0 +1,38 @@
+/* # Plugins
+ *----------------------------------------------------------------------------------------------------
+
+/* ## Genesis eNews Extended
+ *---------------------------------------------
+
+.enews-widget
+  color: $accentColor
+  .widget-title
+    color: $accentColor
+
+.sidebar .widget.enews-widget
+  background-color: $backgroundColor
+
+.enews-widget input
+  border: 1px solid #333
+  &:focus
+    border: 1px solid #333
+  font-size: 16px
+  font-size: 1.6rem
+  margin-bottom: 16px
+  &[type="submit"]
+    background-color: $buttonColor
+    color: $accentColor
+    margin: 0
+    width: 100%
+  &:hover[type="submit"], &:focus[type="submit"]
+    background-color: $thirdBackgroundColor
+    color: $textColor
+
+.enews form + p
+  margin-top: 24px
+
+/* ## Jetpack
+ *---------------------------------------------
+
+#wpstats
+  display: none

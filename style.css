@@ -247,9 +247,9 @@ html, input[type="search"] {
 /* ## Typographical Elements
  *--------------------------------------------- */
 html {
-  font-size: 62.5%;
-  /* 10px browser default */ }
+  font-size: 62.5%; }
 
+/* 10px browser default */
 /* Chrome fix */
 body {
   background-color: #f5f5f5;
@@ -879,20 +879,6 @@ a.alignright, img.alignright, .wp-caption.alignright {
 #wpstats {
   display: none; }
 
-/* # Skip Links
- *---------------------------------------------------------------------------------------------------- */
-.genesis-skip-link {
-  margin: 0; }
-  .genesis-skip-link li {
-    height: 0;
-    width: 0;
-    list-style: none; }
-
-/* Display outline on focus */
-:focus {
-  color: #000;
-  outline: #ccc solid 1px; }
-
 /* # Site Header
  *---------------------------------------------------------------------------------------------------- */
 .site-header {
@@ -1001,22 +987,22 @@ a.alignright, img.alignright, .wp-caption.alignright {
     .genesis-nav-menu .menu-item:hover > .sub-menu {
       left: auto;
       opacity: 1; }
-  .genesis-nav-menu > .first > a {
+  .genesis-nav-menu .first > a {
     padding-left: 0; }
-  .genesis-nav-menu > .last > a {
-    padding-right: 0; }
-  .genesis-nav-menu > .right {
-    color: #fff;
-    float: right;
-    list-style-type: none;
-    padding: 30px 0; }
-    .genesis-nav-menu > .right > a {
-      display: inline;
-      padding: 0; }
-  .genesis-nav-menu > .rss > a {
-    margin-left: 48px; }
-  .genesis-nav-menu > .search {
-    padding: 10px 0 0; }
+    .genesis-nav-menu .first > a .last > a {
+      padding-right: 0; }
+    .genesis-nav-menu .first > a .right {
+      color: #fff;
+      float: right;
+      list-style-type: none;
+      padding: 30px 0; }
+      .genesis-nav-menu .first > a .right > a {
+        display: inline;
+        padding: 0; }
+    .genesis-nav-menu .first > a .rss > a {
+      margin-left: 48px; }
+    .genesis-nav-menu .first > a .search {
+      padding: 10px 0 0; }
 
 /* ## Accessible Menu
  *--------------------------------------------- */
@@ -1327,7 +1313,7 @@ li.comment {
 
   .genesis-nav-menu a {
     padding: 20px 16px; }
-  .genesis-nav-menu > .first > a, .genesis-nav-menu > .last > a {
+  .genesis-nav-menu .first > a, .genesis-nav-menu .last > a {
     padding: 20px 16px; }
 
   .site-header .search-form {
@@ -1506,6 +1492,4 @@ li.comment {
   dl, ol, ul {
     page-break-before: avoid; } }
 
-
-
-/*# sourceMappingURL=maps/style.css.map */
+/*# sourceMappingURL=style.css.map */

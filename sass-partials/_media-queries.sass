@@ -1,0 +1,208 @@
+/* # Media Queries
+ *----------------------------------------------------------------------------------------------------
+
+@media only screen and (max-width: 1200px)
+  .site-inner, .wrap
+    max-width: 960px
+  .content-sidebar-sidebar .content-sidebar-wrap, .sidebar-content-sidebar .content-sidebar-wrap, .sidebar-sidebar-content .content-sidebar-wrap
+    width: 740px
+  .content, .site-header .widget-area
+    width: 620px
+  .sidebar-content-sidebar .content, .sidebar-sidebar-content .content, .content-sidebar-sidebar .content
+    width: 400px
+  .sidebar-primary, .title-area, .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .sidebar-primary, .title-area
+    width: 300px
+  .footer-widgets-1
+    margin-right: 30px
+
+@media only screen and (max-width: 960px)
+  .site-inner, .wrap
+    max-width: 800px
+  .content
+    width: 100%
+  .content-sidebar-sidebar
+    .content, .content-sidebar-wrap
+      width: 100%
+  .sidebar-content-sidebar
+    .content, .content-sidebar-wrap
+      width: 100%
+  .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .sidebar-primary, .sidebar-secondary
+    width: 100%
+  .sidebar-sidebar-content
+    .content, .content-sidebar-wrap
+      width: 100%
+  .site-header .widget-area, .title-area
+    width: 100%
+  .site-header .wrap
+    padding: 20px 5%
+  .header-image .site-title > a
+    background-position: center top
+  .genesis-nav-menu li
+    float: none
+  .site-header
+    ul.genesis-nav-menu, .search-form
+      float: none
+  .genesis-nav-menu, .site-description
+    text-align: center
+  .site-header
+    .title-area, .search-form
+      text-align: center
+  .site-title
+    text-align: center
+  .genesis-nav-menu
+    a
+      padding: 20px 16px
+    >
+    .first > a, .last > a
+      padding: 20px 16px
+  .site-header .search-form
+    margin: 16px auto
+  .genesis-nav-menu li.right
+    display: none
+  .footer-widgets-1
+    margin-right: 0
+
+@media only screen and (max-width: 800px)
+  body
+    background-color: $thirdBackgroundColor
+    font-size: 16px
+    font-size: 1.6rem
+  .site-inner, .wrap
+    padding-left: 5%
+    padding-right: 5%
+  .archive-description, .author-box, .comment-respond, .entry, .entry-comments, .entry-pings, .sidebar .widget, .site-header
+    padding: 0
+  .archive-pagination li a
+    margin-bottom: 4px
+  .five-sixths, .four-sixths, .one-fourth, .one-half, .one-sixth, .one-third, .three-fourths, .three-sixths, .two-fourths, .two-sixths, .two-thirds
+    margin: 0
+    width: 100%
+  .sidebar .widget.enews-widget
+    padding: 40px
+  .responsive-menu-icon
+    display: block
+  .responsive-menu
+    display: none
+    .menu-item
+      display: block
+      .menu-item:hover
+        position: static
+    li.current-menu-item > a, li.current-page-ancestor > a, li:hover > a
+      border-bottom: none !important
+    .menu-item-has-children
+      cursor: pointer
+    .menu-item-has-children > a
+      margin-right: 60px
+    .menu-item-has-children:before
+      content: "\f347"
+      color: $accentColor
+      float: right
+      font: normal 20px/1 'dashicons'
+      height: 20px
+      padding: 15px 20px
+      right: 0
+      text-align: right
+      z-index: 9999
+    .menu-item:last-child .sub-menu li:last-child a
+      padding-bottom: 20px
+    .menu-open.menu-item-has-children:before
+      content: "\f343"
+    > .menu-item > .sub-menu
+      display: none
+    .sub-menu
+      left: auto
+      background: transparent !important
+      color: $accentColor !important
+      opacity: 1
+      position: relative
+      width: 100%
+      z-index: 99
+      .sub-menu
+        background-color: transparent
+        margin: 0
+        padding-left: 25px
+      li a,
+      li a:hover
+        background: transparent !important
+        color: $accentColor !important
+        border: none
+        padding: 12px 20px
+        position: relative
+        text-transform: none
+        width: 100%
+    .current-menu-item > a,
+    .sub-menu .current-menu-item > a:hover,
+    > li.menu-item-has-children:hover > a,
+    a:hover
+      background: none
+/* # Print Styles
+ *----------------------------------------------------------------------------------------------------
+
+@media print
+  *
+    background: transparent !important
+    box-shadow: none !important
+    color: #000 !important
+    text-shadow: none !important
+    &:before, &:after
+      background: transparent !important
+      box-shadow: none !important
+      color: #000 !important
+      text-shadow: none !important
+  a
+    text-decoration: underline
+    &:visited
+      text-decoration: underline
+    &[href]:after
+      content: " (" attr(href) ")"
+  abbr[title]:after
+    content: " (" attr(title) ")"
+  a
+    &[href^="javascript:"]:after, &[href^="#"]:after
+      content: ""
+  .site-title > a:after
+    content: ""
+  thead
+    display: table-header-group
+  img, tr
+    page-break-inside: avoid
+  img
+    max-width: 100% !important
+  @page
+    margin: 2cm 0.5cm
+
+  p, h2, h3
+    orphans: 3
+    widows: 3
+  blockquote, pre
+    border: 1px solid #999
+    page-break-inside: avoid
+  .content, .content-sidebar
+    width: 100%
+  button, input, select, textarea, .breadcrumb, .comment-edit-link, .comment-form, .comment-list .reply a, .comment-reply-title, .edit-link, .entry-comments-link, .entry-footer, .genesis-box, .header-widget-area, .hidden-print, .home-top, .nav-primary, .nav-secondary, .post-edit-link, .sidebar
+    display: none !important
+  .title-area
+    text-align: center
+    width: 100%
+  .site-title > a
+    margin: 0
+    text-decoration: none
+    text-indent: 0
+  .site-inner
+    padding-top: 0
+    position: relative
+    top: -100px
+  .author-box
+    margin-bottom: 0
+  h1, h2, h3, h4, h5, h6
+    orphans: 3
+    page-break-after: avoid
+    page-break-inside: avoid
+    widows: 3
+  img
+    page-break-after: avoid
+    page-break-inside: avoid
+  blockquote, pre, table
+    page-break-inside: avoid
+  dl, ol, ul
+    page-break-before: avoid

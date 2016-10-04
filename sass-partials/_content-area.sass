@@ -1,0 +1,129 @@
+/* # Content Area
+ *----------------------------------------------------------------------------------------------------
+
+/* ## Entries
+ *---------------------------------------------
+
+.entry
+  margin-bottom: 40px
+  padding: 50px 60px
+
+.content .entry
+  background-color: $thirdBackgroundColor
+
+.entry-content
+  ol, ul
+    margin-bottom: 28px
+    margin-left: 40px
+  ol > li
+    list-style-type: decimal
+  ul > li
+    list-style-type: disc
+  ol ol, ul ul
+    margin-bottom: 0
+  code
+    background-color: $backgroundColor
+    color: #ddd
+
+/* ## Entry Meta
+ *---------------------------------------------
+
+p.entry-meta
+  font-size: 16px
+  font-size: 1.6rem
+  margin-bottom: 0
+
+.entry-header .entry-meta
+  margin-bottom: 24px
+
+.entry-footer .entry-meta
+  border-top: 2px solid $secondaryBackgroundColor
+  padding-top: 24px
+
+.entry-categories, .entry-tags
+  display: block
+
+.entry-comments-link::before
+  content: "\2014"
+  margin: 0 6px 0 2px
+
+/* ## Pagination
+ *---------------------------------------------
+
+.pagination
+  clear: both
+  margin: 40px 0
+
+.adjacent-entry-pagination
+  margin-bottom: 0
+
+.archive-pagination
+  li
+    display: inline
+    a
+      background-color: $backgroundColor
+      color: $accentColor
+      cursor: pointer
+      display: inline-block
+      font-size: 16px
+      font-size: 1.6rem
+      padding: 8px 12px
+      text-decoration: none
+      &:hover, &:focus
+        background-color: $buttonColor
+        text-decoration: underline
+  .active a
+    background-color: $buttonColor
+    text-decoration: underline
+
+/* ## Comments
+ *---------------------------------------------
+
+.comment-respond, .entry-comments, .entry-pings
+  background-color: $thirdBackgroundColor
+  margin-bottom: 40px
+
+.comment-respond, .entry-pings
+  padding: 40px 40px 16px
+
+.entry-comments
+  padding: 40px
+
+.comment-header
+  font-size: 16px
+  font-size: 1.6rem
+
+li.comment
+  background-color: $secondaryBackgroundColor
+  border: 2px solid $thirdBackgroundColor
+  border-right: 0
+
+.comment-content
+  clear: both
+  word-wrap: break-word
+
+.comment-list li
+  margin-top: 24px
+  padding: 32px
+  li
+    margin-right: -32px
+
+.comment-respond
+  input
+    &[type="email"], &[type="text"], &[type="url"]
+      width: 50%
+  label
+    display: block
+    margin-right: 12px
+
+.entry-comments .comment-author
+  margin-bottom: 0
+
+.entry-pings .reply
+  display: none
+
+.form-allowed-tags
+  background-color: $secondaryBackgroundColor
+  font-size: 16px
+  font-size: 1.6rem
+  padding: 24px
