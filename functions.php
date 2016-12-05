@@ -87,7 +87,7 @@ function sp_read_more_link()
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter($creds)
 {
-    $creds = 'Copyright '.date('Y').' -  BY';
+    $creds = 'Copyright '.date('Y').' -  BY 11online';
 
     return $creds;
 }
