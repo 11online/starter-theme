@@ -1,0 +1,5 @@
+{
+  "proxy": "local-dev-domain",
+  "hostname": "server-domain",
+  "destination": "path-to-server-theme"
+}

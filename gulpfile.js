@@ -3,11 +3,12 @@ var browserSync = require('browser-sync').create();
 var sass        = require("gulp-ruby-sass");
 var sourcemaps  = require('gulp-sourcemaps');
 var rsync       = require('gulp-rsync');
+var config      = require('./config.json');
 
 
 gulp.task('serve', ['sass'], function() {
     browserSync.init(null, {
-        proxy: "scotch.dev",
+        proxy: config.proxy,
         ghostMode: {
           clicks: true,
           location: true,
@@ -37,9 +38,9 @@ gulp.task('deploy', ['sass'], function() {
   gulp.src('*')
     .pipe(rsync({
       root: '',
-      hostname: '', // domain name
+      hostname: config.hostname,
       username: 'root',
-      destination: '', // path on server
+      destination: config.destination,
       archive: true,
       silent: false,
       compress: true,
