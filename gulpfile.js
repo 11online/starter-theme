@@ -1,8 +1,8 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require("gulp-ruby-sass");
-var sourcemaps = require('gulp-sourcemaps');
-var rsync = require('gulp-rsync');
+var sourcemaps  = require('gulp-sourcemaps');
+var rsync       = require('gulp-rsync');
 
 
 gulp.task('serve', ['sass'], function() {
