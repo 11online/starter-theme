@@ -13,7 +13,7 @@ gulp.task('serve', ['sass'], function() {
           clicks: true,
           location: true,
           forms: true,
-          scroll: true
+          scroll: true,
         }
     });
 
@@ -39,12 +39,12 @@ gulp.task('deploy', ['sass'], function() {
     .pipe(rsync({
       root: '',
       hostname: config.hostname,
-      username: 'root',
+      username: 'serverpilot',
       destination: config.destination,
       archive: true,
       silent: false,
       compress: true,
-      verbose: true,
+      verbose: true
     }));
 });
 
