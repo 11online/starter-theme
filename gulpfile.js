@@ -35,16 +35,18 @@ gulp.task('sass', () =>
 );
 
 gulp.task('deploy', ['sass'], function() {
-  gulp.src('*')
+  return gulp.src('*')
     .pipe(rsync({
       root: '',
       hostname: config.hostname,
       username: 'serverpilot',
       destination: config.destination,
-      archive: true,
       silent: false,
       compress: true,
-      verbose: true
+      incremental: true,
+      emptyDirectories: true,
+      recursive: true,
+      exclude: ['node_modules', '.sass-cache', 'maps', 'sass-partials', 'config.json', 'gulpfile.js', 'package.json', 'style.sass']
     }));
 });
 
