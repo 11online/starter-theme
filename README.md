@@ -5,7 +5,7 @@
 ### 1) gulp sass
 Compiles the css
 ### 2) gulp serve
-Watches local changes, runs the tasks sass, and using browserSync to dynamically reload your browser
+Watches local changes, runs the sass task, and uses browserSync to dynamically reload your browser
 ### 3) gulp deploy
 Deploys theme, based on config.json
 
