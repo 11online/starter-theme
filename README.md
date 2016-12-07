@@ -1,4 +1,4 @@
-# starter-theme
+# Starter Theme
 11 Online Genesis Starter Theme
 
 # Gulp Tasks
