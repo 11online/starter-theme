@@ -118,3 +118,56 @@ function my_theme_add_editor_styles()
     add_editor_style();
 }
 add_action('admin_init', 'my_theme_add_editor_styles');
+
+//*remove worthless dashboard panels
+function remove_dashboard_meta() {
+	remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );   // Right Now
+	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );  // Incoming Links
+	remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );  // Quick Press
+	remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );   // WordPress blog
+	remove_meta_box( 'dashboard_secondary', 'dashboard', 'side' );   // Other WordPress News
+}
+
+add_action( 'admin_init', 'remove_dashboard_meta' );
+
+
+//*remove welcome dashboard panel
+function remove_welcome_panel() {
+	remove_action( 'welcome_panel', 'wp_welcome_panel' );
+	$user_id = get_current_user_id();
+	if ( 0 !== get_user_meta( $user_id, 'show_welcome_panel', true ) ) {
+		update_user_meta( $user_id, 'show_welcome_panel', 0 );
+	}
+}
+
+add_action( 'load-index.php', 'remove_welcome_panel' );
+
+//*display the custom logo if one is set 
+function starter_custom_logo() {
+    if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo();
+    }
+}
+add_action( 'genesis_site_title', 'starter_custom_logo', 0 );
+
+//*only load woocommerce scripts on woocommerce pages 
+function conditionally_load_woc_js_css(){
+if( function_exists( 'is_woocommerce' ) ){
+        # Only load CSS and JS on Woocommerce pages   
+	if(! is_woocommerce() && ! is_cart() && ! is_checkout() ) { 		
+		
+		## Dequeue scripts.
+		wp_dequeue_script('woocommerce'); 
+		wp_dequeue_script('wc-add-to-cart'); 
+		wp_dequeue_script('wc-cart-fragments');
+		
+		## Dequeue styles.	
+		wp_dequeue_style('woocommerce-general'); 
+		wp_dequeue_style('woocommerce-layout'); 
+		wp_dequeue_style('woocommerce-smallscreen'); 
+			
+		}
+	}	
+}
+
+add_action( 'wp_enqueue_scripts', 'conditionally_load_woc_js_css' );
