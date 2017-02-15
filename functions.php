@@ -142,14 +142,6 @@ function remove_welcome_panel() {
 
 add_action( 'load-index.php', 'remove_welcome_panel' );
 
-//*display the custom logo if one is set 
-function starter_custom_logo() {
-    if ( function_exists( 'the_custom_logo' ) ) {
-        the_custom_logo();
-    }
-}
-add_action( 'genesis_site_title', 'starter_custom_logo', 0 );
-
 //*only load woocommerce scripts on woocommerce pages 
 function conditionally_load_woc_js_css(){
 if( function_exists( 'is_woocommerce' ) ){
