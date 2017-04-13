@@ -43,13 +43,37 @@ class ElevenOnline_Image_Control extends WP_Customize_Image_Control {
 	) );
 
 	$wp_customize->add_setting( 'home-widget-1-image', array(
-			'default'  => sprintf( '', get_stylesheet_directory_uri(), $home_widget_1_image ),
+			'default'  => sprintf( '', get_stylesheet_directory_uri(), "" ),
 			'type'     => 'option',
 	) );
 
 	$wp_customize->add_control( new ElevenOnline_Image_Control( $wp_customize, 'home-widget-1-image', array(
-			'label'    => sprintf( __( 'Home Widget 1 Section Image:', 'Theme Name' ), $home_widget_1_image ),
+			'label'    => sprintf( __( 'Home Widget 1 Section Image:', 'Theme Name' ), "" ),
 			'section'  => 'eleven-online-settings',
 			'settings' => 'home-widget-1-image',
+			'priority' => 1,
+	) ) );
+
+	$wp_customize->add_setting( 'home-widget-4-image', array(
+			'default'  => sprintf( '', get_stylesheet_directory_uri(), "" ),
+			'type'     => 'option',
+	) );
+
+	$wp_customize->add_control( new ElevenOnline_Image_Control( $wp_customize, 'home-widget-4-image', array(
+			'label'    => sprintf( __( 'Home Widget 4 Section Image:', 'Theme Name' ), "" ),
+			'section'  => 'eleven-online-settings',
+			'settings' => 'home-widget-4-image',
+			'priority' => 1,
+	) ) );
+
+	$wp_customize->add_setting( 'blog-hero-image', array(
+			'default'  => sprintf( '', get_stylesheet_directory_uri(), "" ),
+			'type'     => 'option',
+	) );
+
+	$wp_customize->add_control( new ElevenOnline_Image_Control( $wp_customize, 'blog-hero-image', array(
+			'label'    => sprintf( __( 'Blog Hero Image:', 'Theme Name' ), "" ),
+			'section'  => 'eleven-online-settings',
+			'settings' => 'blog-hero-image',
 			'priority' => 1,
 	) ) );

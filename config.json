@@ -1,5 +1,5 @@
 {
-  "proxy": "local-dev-domain",
+  "proxy": "scotch.dev",
   "hostname": "server-domain",
   "destination": "path-to-server-theme"
 }

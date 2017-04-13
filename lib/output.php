@@ -16,7 +16,11 @@ function customizer_css() {
 
 	$css = '';
 
-  $css .= '.home-widget-1::before { background: url(' . get_option( 'home-widget-1-image', null) . ')}';
+  	$css .= '.home-widget-1 { background: url(' . get_option( 'home-widget-1-image', null) . ')}';
+
+  	$css .= '.home-widget-4 { background: url(' . get_option( 'home-widget-4-image', null) . ')}';
+
+  	$css .= '.blog-hero { background: url(' . get_option( 'blog-hero-image', null) . ')}';
 
 	if( $css ){
 		wp_add_inline_style( $handle, $css );

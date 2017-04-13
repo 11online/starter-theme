@@ -56,7 +56,7 @@ function add_before_footer_widget_area()
   ));
 }
 
-//* register homepage 3 widgets
+//* register homepage 5 widgets
 genesis_register_sidebar(array(
     'id' => 'home-widget-1',
     'name' => __('Home Widget 1', 'genesis'),
@@ -71,6 +71,16 @@ genesis_register_sidebar(array(
     'id' => 'home-widget-3',
     'name' => __('Home Widget 3', 'genesis'),
     'description' => __('Third widget on the home page', 'Starter Theme'),
+));
+genesis_register_sidebar(array(
+    'id' => 'home-widget-4',
+    'name' => __('Home Widget 4', 'genesis'),
+    'description' => __('Fourth widget on the home page', 'Starter Theme'),
+));
+genesis_register_sidebar(array(
+    'id' => 'home-widget-5',
+    'name' => __('Home Widget 5', 'genesis'),
+    'description' => __('Fifth widget on the home page', 'Starter Theme'),
 ));
 
 //* allow shortcodes in widgets

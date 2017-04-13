@@ -29,6 +29,14 @@ function add_home_page_widgets() {
 		'before' => '<div class="home-widget-3 widget-area"><div class="wrap">',
 		'after'  => '</div></div>',
   ) );
+  genesis_widget_area( 'home-widget-4', array(
+		'before' => '<div class="home-widget-4 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+  ) );
+  genesis_widget_area( 'home-widget-5', array(
+		'before' => '<div class="home-widget-5 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
+  ) );
 }
 
 genesis();

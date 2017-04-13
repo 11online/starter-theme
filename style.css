@@ -252,7 +252,6 @@ html {
 /* 10px browser default */
 /* Chrome fix */
 body {
-  background-color: #f5f5f5;
   color: #000;
   font-family: Lato, sans-serif;
   font-size: 18px;
@@ -705,10 +704,8 @@ th {
   margin-bottom: 20px; }
 
 .archive-description, .author-box {
-  background-color: #fff;
   font-size: 16px;
   font-size: 1.6rem;
-  margin-bottom: 40px;
   padding: 40px; }
 
 .author-box-title {
@@ -1055,8 +1052,8 @@ a.alignright, img.alignright, .wp-caption.alignright {
   display: none; }
 
 .responsive-menu-icon::before {
-  color: #fff;
-  background-color: #333;
+  color: #000;
+  background-color: #fff;
   padding: 10px;
   text-align: center;
   display: block;
@@ -1294,7 +1291,7 @@ li.comment {
     padding: 20px 5%; }
 
   .header-image .site-title > a {
-    background-position: center top; }
+    background-position: center top !important; }
 
   .genesis-nav-menu li {
     float: none; }
@@ -1364,7 +1361,7 @@ li.comment {
       margin-right: 60px; }
     .responsive-menu .menu-item-has-children:before {
       content: "";
-      color: #fff;
+      color: #000;
       float: right;
       font: normal 20px/1 "dashicons";
       height: 20px;
@@ -1381,7 +1378,7 @@ li.comment {
     .responsive-menu .sub-menu {
       left: auto;
       background: transparent !important;
-      color: #fff !important;
+      color: #000 !important;
       opacity: 1;
       position: relative;
       width: 100%;
@@ -1393,7 +1390,7 @@ li.comment {
       .responsive-menu .sub-menu li a,
       .responsive-menu .sub-menu li a:hover {
         background: transparent !important;
-        color: #fff !important;
+        color: #000 !important;
         border: none;
         padding: 12px 20px;
         position: relative;
@@ -1491,6 +1488,39 @@ li.comment {
 
   dl, ol, ul {
     page-break-before: avoid; } }
+.home-widget-1 {
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 300px 0;
+  text-align: center; }
+
+.home-widget-2 {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0; }
+  .home-widget-2 .widget-title {
+    color: #fff; }
+
+.home-widget-3 {
+  text-align: center;
+  padding: 150px 0; }
+
+.home-widget-4 {
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 150px 0;
+  text-align: center; }
+
+.home-widget-5 {
+  text-align: center;
+  padding: 150px 0; }
+
+.blog-hero {
+  background-size: cover !important;
+  background-position: center !important;
+  padding: 100px 0;
+  text-align: center; }
 
 
 

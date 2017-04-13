@@ -1,6 +1,5 @@
 jQuery(function( $ ){
-
-  $(".nav-primary .genesis-nav-menu").addClass("responsive-menu");
+  $(".genesis-nav-menu").addClass("responsive-menu");
   $("nav").before('<div class="responsive-menu-icon"></div>');
 
 	$(".responsive-menu-icon").click(function(){
@@ -9,7 +8,7 @@ jQuery(function( $ ){
 
 	$(window).resize(function(){
 		if(window.innerWidth > 800) {
-			$(".nav-primary .genesis-nav-menu, nav .sub-menu").removeAttr("style");
+			$(".genesis-nav-menu, nav .sub-menu").removeAttr("style");
 			$(".responsive-menu > .menu-item").removeClass("menu-open");
 		}
 	});
@@ -23,3 +22,4 @@ jQuery(function( $ ){
 	});
 
 });
+
