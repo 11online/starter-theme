@@ -1,5 +1,5 @@
 /* # Site Header
- *----------------------------------------------------------------------------------------------------
+ *----------------------------------------------------------------------------------------------------*/
 
 .site-header
   background-color: $thirdBackgroundColor
@@ -8,7 +8,7 @@
     padding: 40px 0
 
 /* ## Title Area
- *---------------------------------------------
+ *---------------------------------------------*/
 
 .title-area
   float: left
@@ -50,9 +50,24 @@
     text-indent: -9999px
 
 /* ## Widget Area
- *---------------------------------------------
+ *---------------------------------------------*/
 
 .site-header .widget-area
   float: right
   text-align: right
   width: 800px
+
+/* ## Sticky Header
+ *---------------------------------------------*/
+.site-header
+  transition: all 1s ease-in-out
+  z-index: 0
+  top: -160px
+  left: 0
+  width: 100%
+  &.sticky
+    position: fixed
+    z-index: 9999999
+    top: 0
+    left: 0
+    width: 100%

@@ -931,6 +931,21 @@ a.alignright, img.alignright, .wp-caption.alignright {
   text-align: right;
   width: 800px; }
 
+/* ## Sticky Header
+ *--------------------------------------------- */
+.site-header {
+  transition: all 1s ease-in-out;
+  z-index: 0;
+  top: -160px;
+  left: 0;
+  width: 100%; }
+  .site-header.sticky {
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    width: 100%; }
+
 /* # Site Navigation
  *---------------------------------------------------------------------------------------------------- */
 .genesis-nav-menu {
