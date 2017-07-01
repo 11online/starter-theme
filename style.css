@@ -946,6 +946,9 @@ a.alignright, img.alignright, .wp-caption.alignright {
     left: 0;
     width: 100%; }
 
+body.sticky {
+  margin-top: 160px; }
+
 /* # Site Navigation
  *---------------------------------------------------------------------------------------------------- */
 .genesis-nav-menu {

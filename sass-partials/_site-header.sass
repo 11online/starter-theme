@@ -3,7 +3,7 @@
 
 .site-header
   background-color: $thirdBackgroundColor
-  min-height: 160px
+  min-height: $headerHeight
   .wrap
     padding: 40px 0
 
@@ -62,7 +62,7 @@
 .site-header
   transition: all 1s ease-in-out
   z-index: 0
-  top: -160px
+  top: -$headerHeight
   left: 0
   width: 100%
   &.sticky
@@ -71,3 +71,6 @@
     top: 0
     left: 0
     width: 100%
+
+body.sticky
+  margin-top: $headerHeight

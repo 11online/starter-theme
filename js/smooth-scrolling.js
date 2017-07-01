@@ -5,9 +5,17 @@ jQuery(function( $ ){
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
+      	// this is in case there is a sticky header on the home page
+        if($('body').hasClass('home')) {
+          var scrollTop = parseInt(target.offset().top) - parseInt($('.site-header').height());
+          $('html, body').animate({
+            scrollTop: scrollTop
+          }, 1000);
+        } else {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
         return false;
       }
     }
