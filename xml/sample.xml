@@ -1117,7 +1117,7 @@
 		<link>http://www.genesisframework.com/?attachment_id=434</link>
 		<pubDate>Tue, 04 Jun 2013 01:08:12 +0000</pubDate>
 		<dc:creator>bgardner</dc:creator>
-		<guid isPermaLink="false">http://www.genesisframework.com/wp-content/uploads/wordpress.png</guid>
+		<guid isPermaLink="false">https://demo.studiopress.com/genesis-sample/files/2016/05/wordpress.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1133,7 +1133,7 @@
 		<wp:post_type>attachment</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url>http://www.genesisframework.com/wp-content/uploads/wordpress.png</wp:attachment_url>
+		<wp:attachment_url>https://demo.studiopress.com/genesis-sample/files/2016/05/wordpress.png</wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key>_wp_attached_file</wp:meta_key>
 			<wp:meta_value><![CDATA[wordpress.png]]></wp:meta_value>
@@ -3260,7 +3260,7 @@ This is an example of a WordPress post, you could edit this to put information a
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=13</guid>
 		<description></description>
-		<content:encoded><![CDATA[[caption id="" align="aligncenter" width="142" caption="Here's a sample caption with an image centered."]<img alt="Here's a sample caption with a sample image centered." src="http://www.genesisframework.com/wp-content/uploads/wordpress.png" width="142" height="142" />[/caption]
+		<content:encoded><![CDATA[[caption id="" align="aligncenter" width="142" caption="Here's a sample caption with an image centered."]<img alt="Here's a sample caption with a sample image centered." src="https://demo.studiopress.com/genesis-sample/files/2016/05/wordpress.png" width="142" height="142" />[/caption]
 
 This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like in order to share with your readers what is on your mind.
 
@@ -3300,7 +3300,7 @@ This is an example of a WordPress post, you could edit this to put information a
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=16</guid>
 		<description></description>
-		<content:encoded><![CDATA[[caption id="" align="alignright" width="142" caption="Here's a sample caption with an image aligned right."]<img alt="Here's a sample caption with a sample image aligned right." src="http://www.genesisframework.com/wp-content/uploads/wordpress.png" width="142" height="142" />[/caption]
+		<content:encoded><![CDATA[[caption id="" align="alignright" width="142" caption="Here's a sample caption with an image aligned right."]<img alt="Here's a sample caption with a sample image aligned right." src="https://demo.studiopress.com/genesis-sample/files/2016/05/wordpress.png" width="142" height="142" />[/caption]
 
 This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
 
@@ -3340,7 +3340,7 @@ This is an example of a WordPress post, you could edit this to put information a
 		<dc:creator>bgardner</dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=18</guid>
 		<description></description>
-		<content:encoded><![CDATA[[caption id="" align="alignleft" width="142" caption="Here&#39;s a sample caption with an image aligned left."]<img alt="Heres a sample caption, with a sample image aligned left." src="http://www.genesisframework.com/wp-content/uploads/wordpress.png" width="142" height="142" />[/caption]
+		<content:encoded><![CDATA[[caption id="" align="alignleft" width="142" caption="Here&#39;s a sample caption with an image aligned left."]<img alt="Heres a sample caption, with a sample image aligned left." src="https://demo.studiopress.com/genesis-sample/files/2016/05/wordpress.png" width="142" height="142" />[/caption]
 
 This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as many posts as you like.
 
