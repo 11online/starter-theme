@@ -76,7 +76,7 @@ function custom_post_types() {
 
 }
 
-//* Don't want any custom post types, just comment out this next line
+//* Don't want any custom post types? Just comment out this next line
 add_action( 'init', 'custom_post_types', 0 );
 
 ?>

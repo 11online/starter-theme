@@ -57,7 +57,7 @@ function custom_taxonomies() {
 
 }
 
-//* Don't want any taxonomies, just comment out this next line
+//* Don't want any taxonomies? Just comment out this next line
 add_action( 'init', 'custom_taxonomies', 0 );
 
 ?>
