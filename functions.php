@@ -118,6 +118,9 @@ include_once( get_stylesheet_directory() . '/lib/output.php' );
 //* Include Custom Post Types
 include_once( get_stylesheet_directory() . '/custom-post-types/index.php' );
 
+//* Include Custom Taxonomies
+include_once( get_stylesheet_directory() . '/custom-taxonomies/index.php' );
+
 //* Add support for custom header
 add_theme_support('custom-header', array(
     'width' => 160,
