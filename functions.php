@@ -184,14 +184,16 @@ if( function_exists( 'is_woocommerce' ) ){
 add_action( 'wp_enqueue_scripts', 'conditionally_load_woc_js_css' );
 
 //* Use Featured Image as Hero Image with Title
-add_action('genesis_after_header', 'add_hero_area');
-function add_hero_area()
+add_action('genesis_after_header', 'eleven_online_add_hero_area');
+function eleven_online_add_hero_area()
 {
     if (!is_front_page()) {
         if (is_single() || is_page()) {
             if (has_post_thumbnail()) {
+                // add the title with in a single hero area
                 echo '<div class="single-hero" style="background: url(' . get_the_post_thumbnail_url(get_the_ID(), 'full') . ')"><div class="wrap"><div class="hero-content"><h1>' . get_the_title() . '</h1></div></div></div>';
-                    remove_action('genesis_entry_header', 'genesis_do_post_title');
+                // remove the default title
+                remove_action('genesis_entry_header', 'genesis_do_post_title');
             }
         }
     }
