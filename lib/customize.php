@@ -26,8 +26,8 @@ class ElevenOnline_Image_Control extends WP_Customize_Image_Control {
 
 		parent::__construct( $manager, $id, $args );
 
-		$this->add_tab( 'upload-new', __( 'Upload New', 'Theme Name' ), array( $this, 'tab_upload_new' ) );
-		$this->add_tab( 'uploaded',   __( 'Uploaded', 'Theme Name' ),   array( $this, 'tab_uploaded' ) );
+		$this->add_tab( 'upload-new', __( 'Upload New', CHILD_THEME_NAME ), array( $this, 'tab_upload_new' ) );
+		$this->add_tab( 'uploaded',   __( 'Uploaded', CHILD_THEME_NAME ),   array( $this, 'tab_uploaded' ) );
 
 		// Early priority to occur before $this->manager->prepare_controls();
 		add_action( 'customize_controls_init', array( $this, 'prepare_control' ), 5 );
@@ -35,10 +35,11 @@ class ElevenOnline_Image_Control extends WP_Customize_Image_Control {
 
 }
 
+
 	global $wp_customize;
 
 	$wp_customize->add_section( 'eleven-online-settings', array(
-		'title'    => __( 'Custom Images', 'Theme Name' ),
+		'title'    => __( 'Custom Images', CHILD_THEME_NAME ),
 		'priority' => 35,
 	) );
 
@@ -48,7 +49,7 @@ class ElevenOnline_Image_Control extends WP_Customize_Image_Control {
 	) );
 
 	$wp_customize->add_control( new ElevenOnline_Image_Control( $wp_customize, 'home-widget-1-image', array(
-			'label'    => sprintf( __( 'Home Widget 1 Section Image:', 'Theme Name' ), "" ),
+			'label'    => sprintf( __( 'Home Widget 1 Section Image:', CHILD_THEME_NAME ), "" ),
 			'section'  => 'eleven-online-settings',
 			'settings' => 'home-widget-1-image',
 			'priority' => 1,
@@ -60,7 +61,7 @@ class ElevenOnline_Image_Control extends WP_Customize_Image_Control {
 	) );
 
 	$wp_customize->add_control( new ElevenOnline_Image_Control( $wp_customize, 'home-widget-4-image', array(
-			'label'    => sprintf( __( 'Home Widget 4 Section Image:', 'Theme Name' ), "" ),
+			'label'    => sprintf( __( 'Home Widget 4 Section Image:', CHILD_THEME_NAME ), "" ),
 			'section'  => 'eleven-online-settings',
 			'settings' => 'home-widget-4-image',
 			'priority' => 1,
@@ -72,7 +73,7 @@ class ElevenOnline_Image_Control extends WP_Customize_Image_Control {
 	) );
 
 	$wp_customize->add_control( new ElevenOnline_Image_Control( $wp_customize, 'blog-hero-image', array(
-			'label'    => sprintf( __( 'Blog Hero Image:', 'Theme Name' ), "" ),
+			'label'    => sprintf( __( 'Blog Hero Image:', CHILD_THEME_NAME ), "" ),
 			'section'  => 'eleven-online-settings',
 			'settings' => 'blog-hero-image',
 			'priority' => 1,
