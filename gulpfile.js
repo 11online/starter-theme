@@ -22,6 +22,11 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("./*").on('change', browserSync.reload);
 });
 
+gulp.task('watch', ['sass'], function() {
+    gulp.watch("style.sass", ['sass']);
+    gulp.watch("sass-partials/*", ['sass']);
+});
+
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', () =>
     sass('style.sass', {sourcemap: true})
