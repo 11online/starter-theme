@@ -15,9 +15,23 @@ function genesis_sample_google_fonts() {
 	wp_enqueue_script( 'genesis-responsive-menu', get_bloginfo('stylesheet_directory').'/js/responsive-menu.js', array('jquery'), '1.0.0');
     wp_enqueue_script( 'genesis-smooth-scrolling', get_bloginfo('stylesheet_directory').'/js/smooth-scrolling.js', array('jquery'), '1.0.0');
     wp_enqueue_script( 'genesis-sticky-header', get_bloginfo('stylesheet_directory').'/js/sticky-header.js', array('jquery'), '1.0.0');
+    wp_enqueue_script( 'genesis-instantclick-blacklist', get_bloginfo('stylesheet_directory').'/js/instantclick-blacklist.js', array('jquery'), '1.0.0');
 	wp_enqueue_style( 'dashicons' );
 
 }
+
+function wpt_enqueue_instantclick() {
+    echo '<script src="'.get_bloginfo('stylesheet_directory').'/js/instantclick.js'.'" data-no-instant></script>';
+}
+// Add hook for front-end <head></head>
+add_action('wp_head', 'wpt_enqueue_instantclick');
+
+function intilize_instantclick() {
+    if ( wp_script_is( 'jquery', 'done' ) ) { ?>
+        <script data-no-instant>InstantClick.init();</script>
+    <?php }
+}
+add_action( 'wp_footer', 'intilize_instantclick' );
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
