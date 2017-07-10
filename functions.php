@@ -16,6 +16,7 @@ function genesis_sample_google_fonts() {
     wp_enqueue_script( 'genesis-smooth-scrolling', get_bloginfo('stylesheet_directory').'/js/smooth-scrolling.js', array('jquery'), '1.0.0');
     wp_enqueue_script( 'genesis-sticky-header', get_bloginfo('stylesheet_directory').'/js/sticky-header.js', array('jquery'), '1.0.0');
     wp_enqueue_script( 'genesis-instantclick-blacklist', get_bloginfo('stylesheet_directory').'/js/instantclick-blacklist.js', array('jquery'), '1.0.0');
+    wp_enqueue_script( 'genesis-modernizr', get_bloginfo('stylesheet_directory').'/js/modernizr.js', array(), '1.0.0');
 	wp_enqueue_style( 'dashicons' );
 
 }
