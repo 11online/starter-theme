@@ -1540,6 +1540,16 @@ li.comment {
   padding: 100px 0;
   text-align: center; }
 
+.single-hero {
+  background-size: cover !important;
+  background-position: center !important; }
+  .single-hero .hero-content {
+    margin: 100px 0;
+    text-align: center; }
+    .single-hero .hero-content h1 {
+      color: #fff;
+      text-shadow: 0 0 7px #000; }
+
 
 
 /*# sourceMappingURL=maps/style.css.map */
