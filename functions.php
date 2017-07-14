@@ -96,6 +96,12 @@ function sp_read_more_link()
     return '... <a class="more-link" href="'.get_permalink().'">Read More</a>';
 }
 
+//* Modify the excerpt more [...] content
+function eleven_online_excerpt_more( $more ) {
+    return '<a class="read-more" href="' . get_permalink( get_the_ID() ) . '"> ... Read More</a>';
+}
+add_filter( 'excerpt_more', 'eleven_online_excerpt_more' );
+
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter($creds)
