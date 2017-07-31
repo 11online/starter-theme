@@ -1,0 +1,50 @@
+.flexbox
+	.checkerboard-container
+		display: flex
+		.checkerboard-text
+			width: 50%
+			padding: 25px
+		.checkerboard-image
+			width: 50%
+			background-size: cover !important
+		&.left
+			.checkerboard-text
+				order: 0
+			.checkerboard-image
+				order: 1
+
+.no-flexbox
+	.checkerboard-container
+		float: left
+		width: 100%
+		position: relative
+		.checkerboard-text
+			width: 50%
+			padding: 25px
+		.checkerboard-image
+			width: 50%
+			background-size: cover !important
+			position: absolute
+			height: 100%
+			top: 0
+		&.right
+			.checkerboard-text
+				float: right
+			.checkerboard-image
+				left: 0
+		&.left
+			.checkerboard-text
+				float: left
+			.checkerboard-image
+				right: 0
+
+@media only screen and (max-width: 800px)
+	.checkerboard-container
+		display: block !important
+		.checkerboard-text
+			width: 100% !important
+			float: none !important
+		.checkerboard-image
+			width: 100% !important
+			position: relative !important
+			padding-bottom: 50% !important
