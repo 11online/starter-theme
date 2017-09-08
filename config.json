@@ -1,5 +1,14 @@
 {
-  "proxy": "scotch.dev",
-  "hostname": "server-domain",
-  "destination": "path-to-server-theme"
+    "proxy": "scotch.dev",
+    "production" : {
+        "hostname": "server-domain-or-ip",
+        "username" : "remote-host-user",
+        "destination": "path/to/theme/on/server"
+    },
+    "staging" : {
+        "hostname": "server-domain-or-ip",
+        "username" : "remote-host-user",
+        "destination": "path/to/theme/on/server"
+    }
 }
+
