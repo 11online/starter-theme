@@ -6,5 +6,5 @@
     "gulp-ruby-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "yargs": "^8.0.2"
-  },
+  }
 }
