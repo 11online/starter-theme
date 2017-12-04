@@ -106,7 +106,7 @@ add_filter( 'excerpt_more', 'eleven_online_excerpt_more' );
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter($creds)
 {
-    $creds = 'Copyright '.date('Y').' -  BY 11online';
+    $creds = 'Copyright '.date('Y').' -  By 11 Online';
 
     return $creds;
 }
