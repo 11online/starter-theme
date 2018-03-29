@@ -111,13 +111,8 @@ function sp_footer_creds_filter($creds)
     return $creds;
 }
 
-//* Add Image upload to WordPress Theme Customizer
-add_action( 'customize_register', 'eleven_online_customizer' );
-function eleven_online_customizer(){
-
-	require_once( get_stylesheet_directory() . '/lib/customize.php' );
-
-}
+//* Add Our Customizer Options
+require_once( get_stylesheet_directory() . '/lib/customize.php' );
 
 //* Include Section Image CSS
 include_once( get_stylesheet_directory() . '/lib/output.php' );
