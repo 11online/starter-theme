@@ -199,3 +199,45 @@ function eleven_online_add_hero_area()
         }
     }
 }
+
+// GUTENBERG Compatibility
+add_action( 'enqueue_block_editor_assets', function() {
+    wp_enqueue_style('eleven_online_theme_styles', get_theme_file_uri('/style.css') );
+} );
+
+add_action( 'after_setup_theme', function() {
+    add_theme_support( 'editor-color-palette', [
+        [
+            'name'  => esc_html__( 'Black', 'Starter Theme' ),
+            'slug' => 'black',
+            'color' => '#000',
+        ],
+        [
+            'name'  => esc_html__( 'Dark Gray', 'Starter Theme' ),
+            'slug' => 'dark-gray',
+            'color' => '#333',
+        ],
+        [
+            'name'  => esc_html__( 'Medium Gray', 'Starter Theme' ),
+            'slug' => 'medium-gray',
+            'color' => '#aaa',
+        ],
+        [
+            'name'  => esc_html__( 'Light Gray', 'Starter Theme' ),
+            'slug' => 'light-gray',
+            'color' => '#f5f5f5',
+        ],
+        [
+            'name'  => esc_html__( 'White', 'Starter Theme' ),
+            'slug' => 'white',
+            'color' => '#fff',
+        ],
+        [
+            'name'  => esc_html__( 'Red', 'Starter Theme' ),
+            'slug' => 'red',
+            'color' => '#c3251d',
+        ]
+    ] );
+    add_theme_support( 'disable-custom-colors' );
+    add_theme_support( 'align-wide' );
+});
