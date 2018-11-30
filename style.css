@@ -1595,9 +1595,10 @@ li.comment {
       width: 100% !important;
       position: relative !important;
       padding-bottom: 50% !important; } }
-.edit-post-visual-editor .components-color-palette__item {
+.components-color-palette__item {
   padding: 0; }
-.edit-post-visual-editor .components-button {
+
+.components-button {
   color: #000; }
 
 .has-black-background-color {
