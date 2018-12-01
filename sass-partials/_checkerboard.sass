@@ -1,17 +1,17 @@
-.flexbox
-	.checkerboard-container
-		display: flex
+.checkerboard-container
+	display: flex
+	.checkerboard-text
+		width: 50%
+		padding: 25px
+	.checkerboard-image
+		width: 50%
+		background-size: cover !important
+		background-position: center !important
+	&.left
 		.checkerboard-text
-			width: 50%
-			padding: 25px
+			order: 0
 		.checkerboard-image
-			width: 50%
-			background-size: cover !important
-		&.left
-			.checkerboard-text
-				order: 0
-			.checkerboard-image
-				order: 1
+			order: 1
 
 .no-flexbox
 	.checkerboard-container
@@ -24,6 +24,7 @@
 		.checkerboard-image
 			width: 50%
 			background-size: cover !important
+			background-position: center !important
 			position: absolute
 			height: 100%
 			top: 0

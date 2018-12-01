@@ -1550,17 +1550,18 @@ li.comment {
       color: #fff;
       text-shadow: 0 0 7px #000; }
 
-.flexbox .checkerboard-container {
+.checkerboard-container {
   display: flex; }
-  .flexbox .checkerboard-container .checkerboard-text {
+  .checkerboard-container .checkerboard-text {
     width: 50%;
     padding: 25px; }
-  .flexbox .checkerboard-container .checkerboard-image {
+  .checkerboard-container .checkerboard-image {
     width: 50%;
-    background-size: cover !important; }
-  .flexbox .checkerboard-container.left .checkerboard-text {
+    background-size: cover !important;
+    background-position: center !important; }
+  .checkerboard-container.left .checkerboard-text {
     order: 0; }
-  .flexbox .checkerboard-container.left .checkerboard-image {
+  .checkerboard-container.left .checkerboard-image {
     order: 1; }
 
 .no-flexbox .checkerboard-container {
@@ -1573,6 +1574,7 @@ li.comment {
   .no-flexbox .checkerboard-container .checkerboard-image {
     width: 50%;
     background-size: cover !important;
+    background-position: center !important;
     position: absolute;
     height: 100%;
     top: 0; }
